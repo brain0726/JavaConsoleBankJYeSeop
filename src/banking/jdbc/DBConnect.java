@@ -1,4 +1,4 @@
-package banking_Banking;
+package banking.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -21,7 +21,7 @@ public class DBConnect {
 		try { 
 			Class.forName("oracle.jdbc.OracleDriver");
 			String url = "jdbc:oracle:thin:@localhost:1521:xe";
-			String id = "hr";
+			String id = "education";
 			String pass = "1234";
 			
 			Connection con = DriverManager.getConnection(url,id,pass);

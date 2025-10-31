@@ -1,4 +1,4 @@
-package banking_Banking;
+package banking.jdbc;
 
 /*
 Account의 자식클래스로 보통예금계좌를 의미한다.

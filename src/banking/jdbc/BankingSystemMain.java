@@ -1,4 +1,4 @@
-package banking_Banking;
+package banking.jdbc;
 
 import java.util.Scanner;
 
@@ -7,6 +7,7 @@ public class BankingSystemMain {
 
 	public static void showMenu() {// 메뉴출력
 		System.out.println("-----Menu------");
+		
 		System.out.println("1.계좌개설");
 		System.out.println("2.입	금");
 		System.out.println("3.출	금");
@@ -17,7 +18,7 @@ public class BankingSystemMain {
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(System.in);
 		
-		AccountManager accManager=new AccountManager(50);
+		AccountManager accManager=new AccountManager("education", "1234");
 		for(;;) {
 			showMenu();
 			int choice=scanner.nextInt();

@@ -1,4 +1,4 @@
-package banking_Banking;
+package banking.jdbc;
 
 /*
 interface로 생성한다. 
